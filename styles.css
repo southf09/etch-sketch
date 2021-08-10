@@ -3,15 +3,39 @@
   --grid-rows: 1;
 }
 
+h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+button {
+  margin: 0;
+  position: absolute;
+}
 .container {
+  height: 600px;
+  width: 600px;
   display: grid;
-  grid-gap: 1em;
+  margin-left: auto;
+  margin-right: auto;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
+  border: 3px solid black;
+  border-radius: 2px;
+}
+
+.color {
+  background-color: pink;
 }
 
 .grid-item {
-  padding: 1em;
-  border: 1px solid black;
+  /* padding: 1em; */
+  /* border: 1px solid black; */
+  height: 25px;
+  width: 25px;
   text-align: center;
 }
+
+/* .grid-item:hover {
+  background-color: blue;
+} */
